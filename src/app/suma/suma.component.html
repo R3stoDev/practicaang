@@ -1,0 +1,21 @@
+<div class="text-center">aplicacion calculadora</div>
+<div class="text-center">
+    <div>
+        <label for="operadora1" class="mx-2">mensake</label>
+        <input type="number" id="operadora1" class="form-control text-center" autocomplete="off" [(ngModel)]="operadora1"> 
+        
+    </div>
+    <div>
+        <label for="operadora2" class="mx-2">mensake</label>
+        <input type="number" id="operadora2" class="form-control text-center" [(ngModel)]="operadora2" autocomplete="off"> 
+   
+    </div>
+
+    <div>
+        <button class="btn btn-primary" (click)="sumar()">sumar</button>
+        <p class="text-center" >resultado {{resultado}}</p>
+    </div>
+
+    <div>
+    </div>
+</div>
