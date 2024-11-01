@@ -8,9 +8,17 @@
         <div class="mb-3">
             <div class="alert alert-success mt-4 mx-auto w-50">
                 {{saludo}}
-            </div>
+            </div> 
         </div>
         </div>
 
     
 </div>
+
+<!-- some-parent.component.html -->
+<app-universal-table 
+  [data]="users" 
+  [columns]="userColumns" 
+  (rowSelected)="onRowSelected($event)" 
+  (rowDeleted)="onRowDeleted($event)">
+</app-universal-table>

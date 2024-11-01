@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th *ngFor="let column of columns">{{ column.header }}</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *for="let row of data" (click)="selectRow(row)">
+        <td *ngFor="let column of columns">{{ row[column.key] }}</td>
+        <td>
+          <button (click)="deleteRow(row); $event.stopPropagation()">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
